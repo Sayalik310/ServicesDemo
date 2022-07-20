@@ -1,0 +1,13 @@
+<h1>In first Component - getting all users </h1>
+
+
+
+id: <input type="text" [(ngModel)]="idToGet" />
+<button (click)='getUserById()'> Get users </button>
+<li>{{u.name}} - {{u.age}}</li>
+
+
+<button (click)='getUsers()'> Get users </button>
+<div *ngFor="let u of users;">
+    <li>{{u.name}} - {{u.age}}</li>
+</div>
